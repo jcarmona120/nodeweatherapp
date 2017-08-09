@@ -4,7 +4,7 @@ const darkSkykey = 'edf577047296d5abe4db0f56e085ea7a';
 
 var getWeather = (latitude, longitude, callback) => {
 	request({
-	url: `https://api.darksky.net/forecast/${darkSkykey}/${latitude},${longitude}`,
+	url: `https://api.darksky.net/forecast/edf577047296d5abe4db0f56e085ea7a/${latitude},${longitude}`,
 	json: true
 }, (error, response, body) => {
 	if (!error && response.statusCode === 200) {
